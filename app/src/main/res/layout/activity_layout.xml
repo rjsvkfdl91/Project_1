@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.layoutandgpa.Layout">
+
+
+    <RelativeLayout
+        style="@style/layout"
+        android:background="@color/colorPrimary">
+
+        <View
+            android:id="@+id/main"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            android:background="#DEC3BE"/>
+
+        <View
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="#E1DEE3"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/main"/>
+        <View
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="#B9314F"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/main"/>
+        <View
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#FFFD82"
+            android:layout_alignParentRight="true"/>
+        <View
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#2D3047"
+            android:layout_alignParentRight="true"/>
+        <View
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#1B998B"
+            android:layout_alignParentBottom="true"/>
+        <View
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#ADE25D"
+            android:layout_alignParentBottom="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/background_dark"
+            android:textColor="@android:color/white"
+            android:textAllCaps="true"
+            android:text="Relative Layout Example"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="20dp"
+            android:padding="3dp"
+            android:textStyle="bold"
+            android:typeface="serif"/>
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        style="@style/layout"
+        android:background="@color/colorAccent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="#FFAD69">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#FFF5B2"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#362C28"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#F7B32B"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="#47A8BD">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#D2FF28"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#D6F599" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/background_dark"
+                    android:textColor="@android:color/white"
+                    android:textAllCaps="true"
+                    android:text="Linear Layout Example"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="20dp"
+                    android:padding="3dp"
+                    android:textStyle="bold"
+                    android:typeface="serif"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

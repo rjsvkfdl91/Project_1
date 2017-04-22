@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#130303"
+    tools:context="com.example.android.layoutandgpa.GPA">
+
+
+    <TextView
+        android:id="@+id/main"
+        style="@style/gpa"
+        android:text="@string/Class" />
+
+    <TextView
+        android:id="@+id/class1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Class1"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_alignBottom="@+id/one"
+        android:textSize="15sp"
+        android:layout_margin="15dp" />
+
+    <EditText
+        android:id="@+id/one"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:textColorHint="#FFFFFF"
+        android:textStyle="bold"
+        android:hint="@string/grade"/>
+
+    <TextView
+        android:id="@+id/class2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Class2"
+        android:textColor="#FFFFFF"
+        android:layout_alignBottom="@+id/two"
+        android:textSize="15sp"
+        android:layout_margin="15dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/two"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/one"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:hint="@string/grade"
+        android:textStyle="bold"
+        android:textColorHint="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/class3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Class3"
+        android:textColor="#FFFFFF"
+        android:layout_alignBottom="@+id/three"
+        android:textSize="15sp"
+        android:layout_margin="15dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/three"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/two"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:hint="@string/grade"
+        android:textStyle="bold"
+        android:textColorHint="#FFFFFF" />
+
+
+    <Button
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/result"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:layout_below="@+id/three"
+        android:layout_marginTop="50dp"
+        android:background="#5580CED7"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clear"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:layout_below="@+id/three"
+        android:layout_marginTop="50dp"
+        android:background="#5580CED7"
+        android:layout_marginStart="200dp"
+        android:layout_marginLeft="200dp"/>
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/showGrade"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_marginTop="30dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitCenter"
+            android:src="@drawable/a"
+            android:visibility="gone"
+            android:contentDescription="@null"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">GUNHEE EX2</string>
+    <string name="layout">Layout</string>
+    <string name="gpa">GPA</string>
+    <string name="Order">ORDER</string>
+    <string name="Class">CLASS</string>
+    <string name="Class1">CLASS 1</string>
+    <string name="Class2">CLASS 2</string>
+    <string name="Class3">CLASS 3</string>
+    <string name="Class4">CLASS 4</string>
+    <string name="Class5">CLASS 5</string>
+    <string name="Class6">CLASS 6</string>
+    <string name="result">RESULT</string>
+    <string name="clear">RESET</string>
+    <string name="grade">Enter the grade (%)</string>
+    <string name="showGrade">GRADE</string>
+    <string name="elapsedTime">ELAPSED TIME</string>
+    <string name="start">START</string>
+    <string name="restaurantReservation">RESERVATION</string>
+    <string name="touch">START YOUR RESERVATION</string>
+
+    <string name="adult">ADULT</string>
+    <string name="child">CHILD</string>
+    <string name="hint1">NUMBER OF ADULTS</string>
+    <string name="hint2">NUMBER OF CHILDREN</string>
+    <string name="button1">PRE</string>
+    <string name="button2">NEXT</string>
+
+    <string name="date">DATE</string>
+    <string name="time">TIME</string>
+    <string name="cAdult">ADULT</string>
+    <string name="cChild">CHILDREN</string>
+    <string name="thank">Thank you!</string>
+
+    <string name="tAdu">The total number of adults is: "</string>
+
+
+    <string name="confirm">CONFIRMATION</string>
+
+
+
+
+</resources>
